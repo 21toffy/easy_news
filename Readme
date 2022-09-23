@@ -1,0 +1,36 @@
+
+Create a virtual environment to install dependencies in and activate it:
+1. python -m venv venv
+2. source venv\bin\activate 
+
+
+Then install the dependencies:
+3. pip install -r requirements.txt
+
+
+Once pip has finished downloading the dependencies:
+4. python manage.py runserver
+
+
+run/start the cenery and celery beat servers
+5. celery -A easy_news beat -l INFO
+6. celery -A easy_news worker -l info
+
+
+create database, user
+
+7. sudo su - postgres
+8. psql
+9. CREATE DATABASE easy_news_db;
+10.CREATE USER db_user WITH PASSWORD 'password';
+11. GRANT ALL PRIVILEGES ON DATABASE easy_news_db TO postgres;
+
+
+Exit the SQL prompt to get back to the postgres user’s shell session:
+12. \q
+Exit out of the postgres user’s shell session to get back to your regular user’s shell session:
+13. exit
+
+To view API Documentation Go to
+14. https://documenter.getpostman.com/view/12179134/2s7ZLeqsx6#f6dc3aa2-161e-42ef-9fe8-4a8c7d89f4a4
+

@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha256-3sPp8BkKUE7QyPSl6VfBByBroQbKxKG7tsusY2mhbVY=" crossorigin="anonymous" />
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<div class="container">
+            <div class="row">
+                 <div class="col-lg-10 mx-auto mb-4">
+                    <div class="section-title text-center ">
+                        <a href="{% url 'item_list' %}">
+
+                            <h3 class="top-c-sep">Easy News</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="career-search mb-60">
+
+                        <form action="{% url 'item_list' %}{{'?page=1'}}" class="career-form2 mb-60">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4 my-3">
+                                    <div class="input-group position-relative">
+                                        <input value="" name="text" type="text" id="custom-select-text" class="form-control" placeholder="Search by text" id="keywords">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 my-3 text-black text-dark">
+                                    <div class="select-container text-black">
+                                        <select name="type" type="text"value="" id="custom-select-type" class="custom-select">
+                                            <option value="">select a choice</option>
+                                            <option value="story"><a class="page-link">Story</a>
+                                            </option>
+                                            <option value="comment">Comment</option>
+                                            <option value="job" >Job</option>
+                                            <option value="polls" >Polls</option>
+                                            <option value="pollsopt" >Polls options</option>
+
+                                            <!-- <option value="3">Bangalore</option> -->
+                                        </select>
+                                    </div>
+                                </div>
+                            <div class="col-md-6 col-lg-4 my-3">
+                                <button type="submit" class="btn btn-lg btn-block btn-light btn-custom" id="contact-submit">
+                                    Search
+                                </button>
+                            </div> 
+                            </div>
+                        </form>
+
+                        <div class="filter-result">
+                            <p class="mb-30 ff-montserrat">Total Number of News :{{item_count}}</p>
+
+
+                            {% if items %}
+
+                            {% for item in items %}
+                            <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
+                                <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
+                                    <div class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">
+                                        {{ item.by|truncatechars:3 }}
+                                    </div>
+                                    <div class="job-content">
+                                        <h5 class="text-center text-md-left">
+                                            
+                                            {% if item.title is not None %}
+                                                {{item.title}} 
+                                            {% else %}
+                                                No title 
+                                            {% endif %}
+                                                
+                                        </h5>
+                                        <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
+                                            <li class="mr-md-4">
+                                                <i class="zmdi zmdi-time mr-2"></i> {{item.convert_from_unix}}
+                                            </li>
+                                            <li class="mr-md-4">
+                                                <i class="zmdi zmdi-pin mr-2"></i> {{item.type}}
+                                            </li>
+                                            <li class="mr-md-4">
+                                                <i class="zmdi zmdi-account mr-2"></i> 
+                                                
+                                                {% if item.by %}
+                                                {{item.by}}
+                                            </li>
+                                            <li class="mr-md-4">
+                                            {% else %}
+                                                No user
+                                            {% endif %}
+                                                
+                                                
+                                            <i class="zmdi zmdi-n-1-square"></i>
+                                            <i class="zmdi zmdi-n-2-square"></i>
+
+                                            <i class="zmdi zmdi-n-3-square"></i>
+
+                                            {{item.score}}
+                                            </li>
+                                        </ul>
+                                        <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
+
+                                            <li class="mr-md-4">
+                                                <small>
+                                                    {% if item.text %}
+                                                        {{ item.text|truncatechars:300 }}
+                                                    {% else %}
+                                                        No Text...
+                                                    {% endif %}
+                                                </small>
+                                            </ul>
+                                            </li>
+                                            <li class="mr-md-4">
+                                                Sync date: {{item.created_at}}
+                                            </li>
+                                    </div>
+                                </div>
+                                <div class="job-right my-4 flex-shrink-0">
+                                    
+                                    
+                                    {% if item.items_parent.first %}
+                                        <a href="{% url 'item-detail' item.id %}" class="btn d-block w-100 d-sm-inline-block btn-warning">View details</a>
+                                        <br />
+                                        <small>
+                                            children: <bold>{{item.items_parent.count}}</bold>
+                                        </small>
+                                    {% else %}
+                                        <small class="text-danger">
+                                            No child
+                                        </small>
+
+                                    {% endif %}
+                                        
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% else %}
+
+                            {% endif %}
+
+
+
+    
+    
+                            <div class="">
+                                <div class="">
+                                    <div class="section-title text-center ">
+                                <!-- START Pagination -->
+                                {% if is_paginated %}
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-reset justify-content-center">
+                                        {% if page_obj.has_previous %}
+                                        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}&?text={{text}}&type={{type}}">{{ page_obj.previous_page_number }}</a></li>
+                                        {% else %}
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                <i class="zmdi zmdi-long-arrow-left"></i>
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                            {% for i in paginator.page_range %}
+                                                {% if page_obj.number == i %}
+                                            <li class="page-item d-none d-md-inline-block">{{ i }}<a class="page-link" ></a></li>
+                                                {% else %}
+                                            <!-- <li class="page-item d-none d-md-inline-block"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li> -->
+                                            {% endif %}
+                                        {% endfor %}
+                                            
+                                        {% if page_obj.has_next %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ page_obj.next_page_number }}&?text={{text}}&type={{type}}">
+                                                {{ page_obj.next_page_number }} <i class="zmdi zmdi-long-arrow-right"></i>
+                                            </a>
+                                        </li>
+                                        {% else %}
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                <i class="zmdi zmdi-long-arrow-right"></i>
+                                            </a>
+                                        </li>
+                                        {% endif %}
+            
+                                    </ul>
+                                </nav>
+                                {% endif %}
+                                <!-- END Pagination -->
+                            </div>
+                            </div>
+                        </div>
+
+                        </div>
+            </div>
+
+        </div>
+</body>
+<script>
+    // var text = document.querySelector('#custom-select-text').innerText; //'#':id '.':class
+    var type = document.querySelector('#custom-select-type').innerText; //'#':id '.':class
+
+    custom-select-text.addEventListener('input', (e) => {
+        origin.defaultValue = e.target.value
+    })
+
+    console.log(type, text)
+</script>
+</script>
+</html>

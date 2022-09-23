@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "84275a0c-1f30-4d29-9eb3-d14128517422",
+		"name": "easy_news",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12179134"
+	},
+	"item": [
+		{
+			"name": "Get Latest News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/list",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Latest News success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/list",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 22 Sep 2022 22:50:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52686"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 2710,\n    \"next\": \"http://127.0.0.1:8000/api/v1/list?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"convert_from_unix\": \"2022-09-22 20:54:43\",\n            \"hacker_id\": 32944510,\n            \"type\": \"comment\",\n            \"by\": \"jmathai\",\n            \"text\": \"The older I get - the more I crave tactile experiences. I was glad he mentioned the experience of listening to albums (well, it’s not the listening that’s so calming after all - he is right on that).<p>Everything has trade offs and as time goes on I value the benefits of technology less and less. I believe this has more to do with age than any sort of absolute value judgement.<p>I should stop at the grocery store on the way home.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 23:12:42\",\n            \"hacker_id\": 32945852,\n            \"type\": \"comment\",\n            \"by\": \"Guest9081239812\",\n            \"text\": \"Any recommendations for magazines? I wouldn&#x27;t mind subscribing to one or two so I have something to casually browse when I&#x27;m tired of staring at a monitor. It seems like when I buy magazine at a store though, it&#x27;s 60% ads, 30% sponsored articles, and 10% interesting content. I&#x27;m usually left wondering why I just spent $10 to look at advertising. Do good ones actually exist?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:39:22\",\n            \"hacker_id\": 32944325,\n            \"type\": \"comment\",\n            \"by\": \"paulhart\",\n            \"text\": \"Apparently Tim hasn&#x27;t seen publications like Wallpaper[0] and Monocle[1] (both created by Tyler Brûlé). Ironically, those kinds of aspirational&#x2F;luxury magazines are printed on heavy stock, and therefore lack a few of the traits that he enjoyed about The Atlantic.<p>[0]: <a href=\\\"http:&#x2F;&#x2F;wallpaper.com&#x2F;\\\" rel=\\\"nofollow\\\">http:&#x2F;&#x2F;wallpaper.com&#x2F;</a>\\n[1]: <a href=\\\"https:&#x2F;&#x2F;monocle.com&#x2F;\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;monocle.com&#x2F;</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:00:02\",\n            \"hacker_id\": 32943904,\n            \"type\": \"story\",\n            \"by\": \"zdw\",\n            \"text\": null,\n            \"title\": \"Luxury Media\",\n            \"url\": \"https://www.tbray.org/ongoing/When/202x/2022/09/21/Luxury-Media\",\n            \"score\": 83\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 15:30:57\",\n            \"hacker_id\": 32940314,\n            \"type\": \"story\",\n            \"by\": \"Brajeshwar\",\n            \"text\": null,\n            \"title\": \"IT services giant Wipro fires 300 for moonlighting\",\n            \"url\": \"https://www.theregister.com/2022/09/22/wipro_fires_300_for_moonlighting/\",\n            \"score\": 29\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 04:19:08\",\n            \"hacker_id\": 32934749,\n            \"type\": \"comment\",\n            \"by\": \"bearon\",\n            \"text\": \"Nice! An awesome retrospective.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 03:26:37\",\n            \"hacker_id\": 32934486,\n            \"type\": \"comment\",\n            \"by\": \"arriu\",\n            \"text\": \"Any plans for text rendering?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-21 07:58:13\",\n            \"hacker_id\": 32922006,\n            \"type\": \"comment\",\n            \"by\": \"AppForce1\",\n            \"text\": \"A Selective Forwarding Unit (SFU) is a media server that receives media from each party in a conference call, decides which streams should be forwarded to other parties, and then forwards them.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 02:16:56\",\n            \"hacker_id\": 32934120,\n            \"type\": \"comment\",\n            \"by\": \"synergy20\",\n            \"text\": \"this is very impressive, how is this done? the executable is only a few hundred KB and it runs for me, wasm is doing the magic here but I don&#x27;t know too much about how the process works.<p>I added -I&#x2F;usr&#x2F;include&#x2F;SDL2 to build.sh, made sure wasm-ld is in place, and it builds and runs smoothly.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-21 07:58:13\",\n            \"hacker_id\": 32922005,\n            \"type\": \"story\",\n            \"by\": \"AppForce1\",\n            \"text\": null,\n            \"title\": \"SFU, MCU, or P2P: What’s the Difference Between These WebRTC Architectures?\",\n            \"url\": \"https://getstream.io/blog/what-is-a-selective-forwarding-unit-in-webrtc/\",\n            \"score\": 8\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 11:26:09\",\n            \"hacker_id\": 32937421,\n            \"type\": \"comment\",\n            \"by\": \"tambourine_man\",\n            \"text\": \"Amazing that software rendering can be this smooth on a phone.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 09:05:24\",\n            \"hacker_id\": 32936445,\n            \"type\": \"comment\",\n            \"by\": \"ofrzeta\",\n            \"text\": \"From the build.sh I figured out that all it takes is to compile with the wasm target, I think:<p>clang $COMMON_CFLAGS -Os -fno-builtin --target=wasm32 ...\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 15:46:59\",\n            \"hacker_id\": 32940583,\n            \"type\": \"comment\",\n            \"by\": \"GeorgeJIrwin\",\n            \"text\": \"\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 11:20:04\",\n            \"hacker_id\": 32937365,\n            \"type\": \"comment\",\n            \"by\": \"TazeTSchnitzel\",\n            \"text\": \"It&#x27;s cool that you can get away with software rendering these days, but it&#x27;s a shame to not make use of the power of the GPU.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 15:04:11\",\n            \"hacker_id\": 32939844,\n            \"type\": \"comment\",\n            \"by\": \"bannedbybros\",\n            \"text\": \"\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 00:58:12\",\n            \"hacker_id\": 32933614,\n            \"type\": \"comment\",\n            \"by\": \"andai\",\n            \"text\": \"Does this use WebGL2? It doesn&#x27;t run on my phone (which does support WebGL 1).<p>Edit: According to the JS source file it appears to be a plain 2D canvas. Now I am even more confused, those should definitely load!<p><a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;tsoding&#x2F;olive.c&#x2F;blob&#x2F;master&#x2F;js&#x2F;vc.js\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;tsoding&#x2F;olive.c&#x2F;blob&#x2F;master&#x2F;js&#x2F;vc.js</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 15:41:00\",\n            \"hacker_id\": 32940480,\n            \"type\": \"comment\",\n            \"by\": \"unstatusthequo\",\n            \"text\": \"Not just governments. I have it and use it.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 00:31:06\",\n            \"hacker_id\": 32933426,\n            \"type\": \"comment\",\n            \"by\": \"WoodenChair\",\n            \"text\": \"I started something superficially similar but for SVG in an intro C class:\\n<a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;davecom&#x2F;SuperSimpleGraphics\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;davecom&#x2F;SuperSimpleGraphics</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 13:51:48\",\n            \"hacker_id\": 32938733,\n            \"type\": \"comment\",\n            \"by\": \"kache_\",\n            \"text\": \"<a href=\\\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ring_signature\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ring_signature</a><p>sorry, federal government. Keep up\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 11:50:15\",\n            \"hacker_id\": 32937581,\n            \"type\": \"comment\",\n            \"by\": \"erwincoumans\",\n            \"text\": \"Cool use of Webassemly! See also the 500 line <a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;ssloy&#x2F;tinyrenderer\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;ssloy&#x2F;tinyrenderer</a> or the 100 line Python&#x2F;numpy version <a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;rougier&#x2F;tiny-renderer\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;rougier&#x2F;tiny-renderer</a><p>Both cpu renderers with texture mapping and Wavefront obj import without further dependencies.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 14:38:12\",\n            \"hacker_id\": 32939384,\n            \"type\": \"comment\",\n            \"by\": \"manholio\",\n            \"text\": \"This is mostly snake oil, perhaps efficient against the dumbest of criminals. The newer generation coin laundry service, for example Chipmixer, will have pre-funded addresses already waiting in the blockchain before the &quot;client&quot; even makes an account. In exchange for a deposit in a wallet controlled by Chipmixer, the client will receive a set of corresponding private keys that add up to the total value being laundered.<p>You might trace that the coins went into a laundry, but you will never associate with the previously laundered coins that the client got.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 01:17:00\",\n            \"hacker_id\": 32933738,\n            \"type\": \"comment\",\n            \"by\": \"simonw\",\n            \"text\": \"This is so nice. It feels a bit like Logo using C syntax - I love that it&#x27;s totally safe to run software written in this in a browser thanks to WebAssembly.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 19:41:04\",\n            \"hacker_id\": 32943700,\n            \"type\": \"comment\",\n            \"by\": \"drummer\",\n            \"text\": \"Good luck tracking monero and pirate chain boyzzz\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 00:09:21\",\n            \"hacker_id\": 32933291,\n            \"type\": \"comment\",\n            \"by\": \"dlivingston\",\n            \"text\": \"Cool project! What’s the motivation? Since it eschews any graphics API, is it safe to assume this only does CPU-based rendering?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 13:41:35\",\n            \"hacker_id\": 32938620,\n            \"type\": \"comment\",\n            \"by\": \"TobyTheDog123\",\n            \"text\": \"&gt;Chainalysis software puts the lie to the idea that Bitcoin guarantees anonymity.<p>I, for one, am shocked that moving decentralized currency to a centralized service that knows your identity de-anonymizes said currency.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 14:09:46\",\n            \"hacker_id\": 32938980,\n            \"type\": \"comment\",\n            \"by\": \"m00dy\",\n            \"text\": \"I have been wondering what he is going to do under the recently declared partial mobilisation. I hope he could find a way to get out the country. He needs to know he is always welcomed in Turkiye.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 13:46:35\",\n            \"hacker_id\": 32938678,\n            \"type\": \"comment\",\n            \"by\": \"yieldcrv\",\n            \"text\": \"&gt; people have the right to financial privacy, but technology shouldn’t be “warrant-proof.”<p><i>people</i> aren’t warrant proof, the government is just used to a brief period of time where they could go to intermediaries instead of doing an actual investigation. this is just a reversion to the mean.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 01:01:10\",\n            \"hacker_id\": 32933633,\n            \"type\": \"comment\",\n            \"by\": \"treuks\",\n            \"text\": \"Please do note that it is in an extremely early stage of development, so if it may seem raw and unpolished, it is because it is.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 13:30:55\",\n            \"hacker_id\": 32938518,\n            \"type\": \"comment\",\n            \"by\": \"dang\",\n            \"text\": \"Related:<p><i>Chainalysis in Action: Justice Dept Demands Forfeiture of 280 Crypto Addresses</i> - <a href=\\\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=24306511\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=24306511</a> - Aug 2020 (54 comments)\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 02:59:35\",\n            \"hacker_id\": 32934355,\n            \"type\": \"comment\",\n            \"by\": \"altilunium\",\n            \"text\": \"Years ago, i made something similar as a coursework (Computer Graphics)<p><a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;rtnF14&#x2F;ComputerGraphics\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;rtnF14&#x2F;ComputerGraphics</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 17:14:50\",\n            \"hacker_id\": 32941831,\n            \"type\": \"comment\",\n            \"by\": \"tb_technical\",\n            \"text\": \"We will never be free.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 10:00:09\",\n            \"hacker_id\": 32936804,\n            \"type\": \"comment\",\n            \"by\": \"tleb_\",\n            \"text\": \"Idea for improvement: avoiding color blending in sRGB. A first step would be to work in linear space.<p><a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;tsoding&#x2F;olive.c&#x2F;blob&#x2F;43a67dd76760f915516a5e8e2529ec46dcdf1f22&#x2F;olive.c#L270-L287\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;tsoding&#x2F;olive.c&#x2F;blob&#x2F;43a67dd76760f915516a...</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 14:35:09\",\n            \"hacker_id\": 32939341,\n            \"type\": \"comment\",\n            \"by\": \"can16358p\",\n            \"text\": \"And aren&#x27;t there any open source tools to do roughly similar analyses?<p>I&#x27;d be surprised if there aren&#x27;t any. Any large-scale criminal action can be strategically simulated and analyzed on those to make these guys&#x27; job harder up to the point that it&#x27;s no longer feasible for many situations.<p>(clarification: while I do not support any criminal action, I equally hate government survelliance)\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 07:28:22\",\n            \"hacker_id\": 32935748,\n            \"type\": \"comment\",\n            \"by\": \"two_almonds\",\n            \"text\": \"<i>The name is pronounced as &quot;olivets&quot; which is a Ukrainian word for &quot;pencil&quot; (&quot;олівець&quot;).</i><p>From the readme.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 19:05:07\",\n            \"hacker_id\": 32943253,\n            \"type\": \"comment\",\n            \"by\": \"wikitopian\",\n            \"text\": \"I hope the feds hunt down and arrest everybody who used multiple slurp juices on a single ape.<p>There&#x27;s XMR, some interesting little projects like DERO, and a vast sea of tokenomic pyramid scheme garbage that governments can and should stop.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 10:04:45\",\n            \"hacker_id\": 32936837,\n            \"type\": \"comment\",\n            \"by\": \"osener\",\n            \"text\": \"I also found this Cairo-like vector graphics library that runs in a shader interesting: <a href=\\\"https:&#x2F;&#x2F;www.shadertoy.com&#x2F;view&#x2F;lslXW8\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;www.shadertoy.com&#x2F;view&#x2F;lslXW8</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 23:00:58\",\n            \"hacker_id\": 32945742,\n            \"type\": \"comment\",\n            \"by\": \"frozencell\",\n            \"text\": \"&gt; Governments<p>Specifically U.S. and protectorates right?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 02:36:42\",\n            \"hacker_id\": 32934236,\n            \"type\": \"comment\",\n            \"by\": \"an1sotropy\",\n            \"text\": \"The TODO section at the end of olive.c shows that there&#x27;s lots more to do, and decisions to make about how much to do (e.g. what about bezier curves?), but that&#x27;s quibbling: it is refreshing (and educational) to see everything here done in such a perfectly self-contained way.  Godspeed!\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 13:30:31\",\n            \"hacker_id\": 32938512,\n            \"type\": \"comment\",\n            \"by\": \"m00dy\",\n            \"text\": \"Let&#x27;s see what they can do for Zero-Knowledge proofs.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 01:45:26\",\n            \"hacker_id\": 32933929,\n            \"type\": \"comment\",\n            \"by\": \"dezmou\",\n            \"text\": \"Nice to see tsoding on the top of HN, this guy does amazing streams and youtube video\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 19:45:35\",\n            \"hacker_id\": 32943745,\n            \"type\": \"comment\",\n            \"by\": \"Canada\",\n            \"text\": \"They help anyone who wants to pay trace crypto. Their product is well implemented, and they have skilled and motivated people. There are competitors who offer similar, and in my opinion not as well done, but for considerably money.<p>I don&#x27;t like the way any of these companies encourage authorities to impose requirements for KYT, but it&#x27;s unsurprising.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 10:11:59\",\n            \"hacker_id\": 32936882,\n            \"type\": \"comment\",\n            \"by\": \"quickthrower2\",\n            \"text\": \"The combination of mapping pixels to memory and rendering individually\\nand then that appearing on webgl and looking great on a not too expensive\\nphone, where I am pinch zooming while it flawlessly animates, sort of blows my mind in how much technology has come in 25 years. Connects the old with the new in a way I haven’t seen for a while (and yeah seen loads of C64 emulators and such)\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 14:07:40\",\n            \"hacker_id\": 32938941,\n            \"type\": \"comment\",\n            \"by\": \"jqpabc123\",\n            \"text\": \"Imagine the outcry if government announced that every transaction you ever do will be recorded in a publicly available database.<p>Bitcoin as it currently exists will never be a replacement for fiat --- not even close --- for a multitude of reasons.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 00:41:36\",\n            \"hacker_id\": 32933498,\n            \"type\": \"comment\",\n            \"by\": \"billsix\",\n            \"text\": \"Nice!  PortableGL is also great, OpenGL api that is defined in entirely in C and writes the “framebuffer” into an SDL window<p><a href=\\\"https:&#x2F;&#x2F;github.com&#x2F;rswinkle&#x2F;PortableGL\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;github.com&#x2F;rswinkle&#x2F;PortableGL</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 14:34:50\",\n            \"hacker_id\": 32939334,\n            \"type\": \"comment\",\n            \"by\": \"pclmulqdq\",\n            \"text\": \"As far as I know, the state of crypto privacy is that everything is directly traceable except:<p>* Bitcoin lightning transactions when the lightning nodes involved are trusted to not keep logs<p>* Transactions through mixers with a lot of users<p>* Monero transactions<p>* Zcash private transactions<p>And everything is de-facto traceable except:<p>* Tornado cash users who use standard-size amounts (or users of another equivalently large smart-contract-based mixer)<p>* Monero users who are careful about their entry&#x2F;exit<p>Zcash privacy doesn&#x27;t have enough users for anonymity, most mixers are too small, and lightning users generally use nodes from exchanges which do log a lot of information that isn&#x27;t kept on chain.<p>Am I missing anything?  This seems kind of bad for cryptocurrencies in general if everything is basically traceable.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-21 22:50:12\",\n            \"hacker_id\": 32932631,\n            \"type\": \"story\",\n            \"by\": \"masterofsome\",\n            \"text\": null,\n            \"title\": \"Olive.c: a simple graphics library that does not have any dependencies\",\n            \"url\": \"https://tsoding.org/olive.c/\",\n            \"score\": 469\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 12:23:53\",\n            \"hacker_id\": 32937880,\n            \"type\": \"comment\",\n            \"by\": \"helsinkiandrew\",\n            \"text\": \"<a href=\\\"https:&#x2F;&#x2F;archive.ph&#x2F;fxWwT\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;archive.ph&#x2F;fxWwT</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 07:05:25\",\n            \"hacker_id\": 32935605,\n            \"type\": \"comment\",\n            \"by\": \"forrestthewoods\",\n            \"text\": \"The solution is simple: ship your fucking dependencies.<p>Every application should ship every  dependency it requires. Attempting to use random shit that may or may not be installed on the system is a disaster.<p>Containers that include all dependencies achieves this. Infact I like to argue that the only reason containers exist is because reliably launching software is so outrageously complex the only way to do is create a full system imagine. It’s a modern day tragedy.<p>Disk space is cheap. If every application shipped duplicate dependencies it’d be… totally fine. The downside is inability to update security vulnerabilities. But if everyone is shipping containers that seems kinda moot.<p>iOS and Android don’t have this issue. When you install an app it just works. Windows has the issue somewhat, but it’s mostly a problem with dev tools that are trying to pretend their in Linux. If you ship your fucking dependencies it’s a non-issue.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 12:23:21\",\n            \"hacker_id\": 32937876,\n            \"type\": \"story\",\n            \"by\": \"helsinkiandrew\",\n            \"text\": null,\n            \"title\": \"Chainalysis: A startup that helps governments trace crypto\",\n            \"url\": \"https://www.bloomberg.com/news/articles/2022-09-21/crypto-tracer-chainalysis-busts-bitcoin-btc-anonymity\",\n            \"score\": 103\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 08:36:09\",\n            \"hacker_id\": 32936241,\n            \"type\": \"comment\",\n            \"by\": \"kkfx\",\n            \"text\": \"I think many, too many still fail to see two thing:<p>- packages&#x2F;package management is intimately tied to filesystems and so installers. Actual package models are based on &#x27;80s Unix model that do not scale anymore since decades. Such model was designed decoupling &quot;system code&quot; to &quot;user code&quot; (script, mostly) while all along the IT history, both before and after unix we see a better model (see below);<p>- packages in FLOSS are NOT meant do be made by upstream developers, that&#x27;s a need of <i>commercial only</i> software. In FLOSS systems packagers of any distro package upstream code.<p>Now a step at a time: classic systems where designed as a single application, indefinitively extensible by many, and users included. At a certain point in time AT&amp;T&#x2F;IBM and others say &quot;ah, no that&#x27;s bad&quot; IMVHO just to deprive users of much power and gain the ability to sell limited, limiting and poorly designed crap. For more than a decade such decoupling take shape. After decades of big mess frameworks spring to life as a kind of middle-ground and they prove to be no better than the decoupled crap they try to solve without coming back to the classic OS-as-a-single-application model. Now essentially ALL non trivial applications being unable to effectively integrate each others try to be &quot;the only one application&quot; and finding no way to do so some pull out of the hat an even worse cage: hiding the OS on someone else computer, used as a bootloader of a modern more limited and limiting Java VM: the WebVM improperly named browser for legacy reasons. Pushing &quot;the network is the computer&quot; to &quot;the cloud is the system&quot;.<p>To solve this mess what we need is the original solution: the OS as a single application where source code is in the runtime, no &quot;packaging&quot; just SCM. Oh, surely that does not solve version conflict between source, these actually are ALREADY solved in architectural terms by the FLOSS distribution model: packagers assemble code. But working directly on source makes that far easier with simple sharable patches who happen to be also a bit distro-neutral. Nix&#x2F;Guix offer the actual middle ground.<p>To solve the storage mess it&#x27;s far more complex. Today most solutions simply use a backend storage service, a kind of DB, no matter if SQL-alike or key-value or something else. SUN with zfs realize a very first limited evolution in that sense, but far from current needs. BeOS with if raw &quot;query-able file system&quot; have done another very small part before. <a href=\\\"https:&#x2F;&#x2F;twizzler.io\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;twizzler.io</a> seems to offer something more modern, but that&#x27;s still an open issue.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:27:57\",\n            \"hacker_id\": 32944208,\n            \"type\": \"comment\",\n            \"by\": \"steve_john\",\n            \"text\": \"\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 12:32:48\",\n            \"hacker_id\": 32937961,\n            \"type\": \"comment\",\n            \"by\": \"al2o3cr\",\n            \"text\": \"I dunno about &quot;modern&quot; - I can recall distro packaging making a total disaster of Ruby gems over a decade ago.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:19:29\",\n            \"hacker_id\": 32944095,\n            \"type\": \"comment\",\n            \"by\": \"gitpusher\",\n            \"text\": \"&gt; &quot;Hamilton’s research suggests the soleus pushup [...] is more effective than any popular methods currently touted as a solution [to a sedentary lifestyle] including exercise, weight loss and intermittent fasting.&quot;<p>Better than exercise? LOL.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 06:56:54\",\n            \"hacker_id\": 32935561,\n            \"type\": \"comment\",\n            \"by\": \"auggierose\",\n            \"text\": \"The text suggests to just containerise any app, so I am wondering, what is the current status for containers (on Linux):<p>Can you access files outside of a container from inside a container?<p>Can you access devices like an eGPU from inside a container?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:41:29\",\n            \"hacker_id\": 32944356,\n            \"type\": \"comment\",\n            \"by\": \"hn_throwaway_99\",\n            \"text\": \"I agree with all the other comments about this - the whole thing stinks of a BS infomercial, for very specific reasons:<p>1. Are people supposed to do this contraction <i>indefinitely</i> while sitting? Good luck with that.<p>2. Is this only supposed to be done with an e-stim machine to generate the contraction? Again, if so, it may be an interesting curiosity, but it&#x27;s not practical.<p>FWIW I wouldn&#x27;t have such a negative reaction if the whole site and presentation wasn&#x27;t in &quot;slick bullshit&quot; form, but instead conservatively, and <i>clearly</i>, presented their for findings.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 08:16:09\",\n            \"hacker_id\": 32936114,\n            \"type\": \"comment\",\n            \"by\": \"ddevault\",\n            \"text\": \"Nonsense. There are essentially two conflicting ideals here: what developers want and what distros want. The problem is that distros are generally right and what distros want is also what users want. So it&#x27;s devs against the world.<p>Devs want to ship updates whenever they want and force them into their users&#x27; machines as soon as possible, and forget about updating dependencies and pin them to ten versions ago so they never have to eat the cost of upgrading them. Devs don&#x27;t want to make sure their application plays well with others, they just want to package it up in its own universe, the user&#x27;s hard drive space and bandwidth be damned. Devs never want to finish their software or declare it stable, they just want to ship their machine on Monday morning so users have it installed by Monday afternoon, just to be updated again on Wednesday. Devs want to ship spyware and adware and malware without any oversight. All of this is cheap and profitable for devs but highly antisocial.<p>Everything is better about the distro model: security, efficiency, and stability, and they represent the users interests even when they conflict with the dev&#x27;s interests.<p>&quot;Modern applications&quot; are developed by children and distros are the teacher slapping them on the wrist for misbehaving. Don&#x27;t bitch about it -- just grow up.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:19:06\",\n            \"hacker_id\": 32944092,\n            \"type\": \"comment\",\n            \"by\": \"birdyrooster\",\n            \"text\": \"I am always doing soleus pushups to stim for my ADHD and it hasn&#x27;t kept me from getting fat or tired.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 09:00:31\",\n            \"hacker_id\": 32936414,\n            \"type\": \"comment\",\n            \"by\": \"edent\",\n            \"text\": \"There is, I think, a bit of a paradigm shift in action.<p>In the old world, disk space was limited and download speeds were slow. So it made sense for every app to use the system-provided version of Library X.<p>Additionally, stability and backwards compatibility was assumed. So if the distro updated to Library X v1.2, and your app relied on v1.1, everything would still work.<p>Today&#x27;s world is very different (for many users). Disk space is cheap and plentiful and downloading a couple of GB takes an instant. So why not bundle everything together?<p>Additionally, developers can&#x27;t be sure of stability in their dependencies. And the app developer is the person who receives the complaints from angry users, not the library developer.<p>So it makes perfect sense to use a self-contained set of libraries and dependencies.<p>The pendulum will swing the other way in time. We&#x27;ll all get annoyed at having a dozen different Electron libraries taking up space, and we&#x27;ll go back to one-library-to-rule-them all.<p>But - as someone who used to hate battling dependency hell - I love Flatpack.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:41:27\",\n            \"hacker_id\": 32944354,\n            \"type\": \"comment\",\n            \"by\": \"notyourday\",\n            \"text\": \"I think this is going to end up being an overblow over-editorialized headline.<p>This looks to be an example of NEAT movements, which engage muscles and therefore of course increases energy requirement. The effect of NEAT on energy requirements of a body is fairly well studies and fairly well known. It would have been far more interesting if it lasted for over 4 hours as that would at least in theory pass the 2nd level signaling.<p>If you are interested in this, I highly recommend Huberman&#x27;s podcasts such as <a href=\\\"https:&#x2F;&#x2F;hubermanlab.com&#x2F;how-to-lose-fat-with-science-based-tools&#x2F;\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;hubermanlab.com&#x2F;how-to-lose-fat-with-science-based-t...</a><p>and<p><a href=\\\"https:&#x2F;&#x2F;hubermanlab.com&#x2F;dr-andy-galpin-how-to-build-strength-muscle-size-and-endurance&#x2F;\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;hubermanlab.com&#x2F;dr-andy-galpin-how-to-build-strength...</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 07:08:07\",\n            \"hacker_id\": 32935618,\n            \"type\": \"comment\",\n            \"by\": \"Brian_K_White\",\n            \"text\": \"Modern apps are not suitable full stop.<p>Also, shitty every app is a pile of of microservices and containers != &quot;modern&quot;.<p>If your thoughtless architecture sucks, it might be your thoughtless architecture and not the entire preexisting world failing to support your lack of ah whatever fucking kids...\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:43:47\",\n            \"hacker_id\": 32944389,\n            \"type\": \"comment\",\n            \"by\": \"swayvil\",\n            \"text\": \"This could be automated via electrical stimulation. A couple of battery-powered boxes strapped to your legs. It could be quite fashionable.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 13:24:39\",\n            \"hacker_id\": 32938454,\n            \"type\": \"comment\",\n            \"by\": \"noobermin\",\n            \"text\": \"Just spit balling ideas here, how much of the problems containerizing is meant to solve would be solved by merely static linking? Because it feels like that&#x27;s what containers are mostly used for. Static linking + a sandbox to get most of everything.<p>Using shared libraries but then shipping the .so&#x27;s in a container defeats the point of a .so in the first place. If the reason containers are okay now since disk space is cheap, why not return to static linking of executables?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 08:29:32\",\n            \"hacker_id\": 32936199,\n            \"type\": \"comment\",\n            \"by\": \"forgotpwd16\",\n            \"text\": \"Nix solves the mentioned issues without using containers. Not sure why they keep referring to containers as only solution when Nix is included. Also not sure why they talk specifically about graphical applications. The issues mentioned apply to every program running on the system. That said, agree on those issues.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:48:12\",\n            \"hacker_id\": 32944435,\n            \"type\": \"comment\",\n            \"by\": \"kgwxd\",\n            \"text\": \"&gt; When activated correctly...<p>Any chance they found that it&#x27;s the same activation you get from walking but just kind of left that part out?<p>Edit: Never mind, watched the video. Apparently it&#x27;s the exact reverse of that internally? Did they test a moonwalk?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 12:03:11\",\n            \"hacker_id\": 32937679,\n            \"type\": \"comment\",\n            \"by\": \"Roark66\",\n            \"text\": \"How can one write an article like this and fail to mention guix? It solves _a_lot_ of the problems mentioned. Guix (and all its channels) is a great piece of software, but unfortunately its potential for populartity is severely diminished by the insistence of the core user&#x2F;dev group that its goals are not purely technological, but ideological(perhaps even primarily ideological).<p>It seems that for many devs guix is less of a technical achievemt,and more a way of preventing people from being able to run what they call &quot;non free software&quot;. BTW, &quot;non free software&quot; also includes open source software that was released under certain non-compliant licenses.<p>The biggest issue I have with guix is that any effort of packaging &quot;non-free&quot; software (such as cuda, intel MKL, nvidia drivers etc). Is heavily discouraged, and if it it does happen its discussion is banned from official channels and all authors which make such software available in their personal repos seem to meekly include various pledges in the READMEs &quot;to not advertise this horrible evil thing, or otherwise let people know of its existence&quot;. To me this behaviour is very far away from encouraging &quot;free software&quot;, but my and their definition of free differ a lot.<p>My second issue with guix is that the language used to write everything(guile) still lacks many crucial debugging and ease-of-use features such as: being able to display more meanigful error messages, being able to show on which line of compiled code the error&#x2F;exception happens at, being able to easily interrogate variable value types (there seem to be lots of is_this_value_a_string?, or is_this_value_an_integer? functions, but no what_type_is_this?), no standard way to convert nested objects to string, or to pretty-print deeply nested objects. To this one has to add pretty substantial, but really poorely laid out documentation of the language (from the very first chapter the authors in their examples use all language features that may not be explained until 300 pages in - so the reader basically has to read the whole thing multiple times to &quot;get it&quot;). And so on... All those things matter a lot to beginners and they matter less to advanced users. If this language and guix in general is to catch on, it has to be more beginner friendly.<p>However as a package manager it really is pretty good. It delivers everything nix does, but uses a more standardised and powerfull general purpose language.<p>I can&#x27;t wait until someone forks guix without the whole ideology thing.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:14:25\",\n            \"hacker_id\": 32944708,\n            \"type\": \"comment\",\n            \"by\": \"RobertRoberts\",\n            \"text\": \"Eat a _lot_ less. Exercise (even just a little). Don&#x27;t snack late into the evening. Be hungry, on a consistent and regular basis. Don&#x27;t over-eat.<p>No magic, no cost, no special anything.<p>It&#x27;s not easy, and most people can&#x27;t do it, but it works. And even if some magic product helps you lose weight, you will still need to follow the above rules anyways.<p>It&#x27;s like many smokers, they can&#x27;t quit until they almost die, but then they just magically can quit, cause it&#x27;s life and death. No magic product&#x2F;idea, just time to make a change.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:20:04\",\n            \"hacker_id\": 32944758,\n            \"type\": \"comment\",\n            \"by\": \"renewiltord\",\n            \"text\": \"Seems hard to do since your gastrocnemius will just take over. Whatever, I&#x27;ll do random heel lifts anyway. The calves could use some strengthening.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 14:25:05\",\n            \"hacker_id\": 32939190,\n            \"type\": \"comment\",\n            \"by\": \"tannhaeuser\",\n            \"text\": \"The question is why now? Distros have for the longest time worked as curated sets of dependencies without &quot;nuclear&quot; options such as containers. At the same time, there have been exactly zero new end-user apps on Linux for over a decade. Incidentally just today I bought a MBP after 12 years on Linux. Won&#x27;t miss the stagnation, bike shedding,   nerding around with new unproven languages, projecting everything into the &quot;next big thing&quot; such as rust, systemd, containers while delivering very little, the DE regressions, comical lack of apps, qa, taste, professionalism, and common sense.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 22:03:47\",\n            \"hacker_id\": 32945219,\n            \"type\": \"comment\",\n            \"by\": \"_dain_\",\n            \"text\": \"Since in the not too distant past we walked on all fours, wouldn&#x27;t the analogous muscles in the wrist also have this ability as an atavism? Or did we lose it\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 07:40:47\",\n            \"hacker_id\": 32935853,\n            \"type\": \"comment\",\n            \"by\": \"compsciphd\",\n            \"text\": \"I literally wrote part of my phd dissertation on this (can call it proto docker as it predated it and they seemed to use much of the same nomenclature I used, also was sort of a toss in an the very in, though arguably my most important contribution).<p>see - <a href=\\\"https:&#x2F;&#x2F;www.usenix.org&#x2F;legacy&#x2F;event&#x2F;lisa11&#x2F;tech&#x2F;full_papers&#x2F;Potter.pdf\\\" rel=\\\"nofollow\\\">https:&#x2F;&#x2F;www.usenix.org&#x2F;legacy&#x2F;event&#x2F;lisa11&#x2F;tech&#x2F;full_papers&#x2F;...</a>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:01:39\",\n            \"hacker_id\": 32944585,\n            \"type\": \"comment\",\n            \"by\": \"mikhailyus\",\n            \"text\": \"If the muscle can be activated only by specific equipment, how it survived the evolution? Why is it still in our bodies?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 09:12:49\",\n            \"hacker_id\": 32936491,\n            \"type\": \"comment\",\n            \"by\": \"kasabali\",\n            \"text\": \"Yet another article arguing against distribution package managers without understanding them a bit.<p>Traditional packaging is perfectly suitable for modern applications.<p>What author is arguing against is the distributions&#x27; packaging <i>policies</i>. Distribution policies are what prevents shipping multiple versions of the same library or program, not package managers. These policies are in place because they&#x27;re necessary for releasing and maintaining a 50000 package distribution.<p>But for shipping your own software you&#x27;re free to ignore distribution policies. Package managers have always provided the necessary mechanism. Nothing is preventing you from shoving in <i>all</i> library, binary or data dependencies your program needs into a deb package. You&#x27;re also free to embed version number in package name and installation paths so different versions could be installed in parallel. The package manager will obey dutifully. Build systems have always been capable of installing libraries into arbitrary paths, and deb&#x2F;rpm packages are just dumb archive files with metadata slapped on top. If you shove everything needed into it and declare no dependencies, it&#x27;ll be no different than a  dumb tar file and it&#x27;ll work just fine if you did it right.<p>You can even imitate flatpak runtimes if you want. Put same things a flatpak runtime has into &#x2F;usr&#x2F;lib&#x2F;freedesktop-sdk-21.08 into a package like freedesktop-sdk-2108.deb, and make your application deb depend on freedesktop-sdk-2108 and you&#x27;re good to go.<p>I&#x27;m really tired hearing of these baseless arguments over and over over the years. I just wish everyone could be honest and just say &quot;We don&#x27;t <i>like</i> deb&#x2F;rpm, they&#x27;re not cool, they&#x27;re not hip, we just want to NIH them&quot; so we could be spared of these made up justifications.<p>P.S. I have nothing against nix. Nix is legit innovation.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 23:03:52\",\n            \"hacker_id\": 32945773,\n            \"type\": \"comment\",\n            \"by\": \"ruined\",\n            \"text\": \"it is 2022 and scientists have discovered fidgeting\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 09:10:04\",\n            \"hacker_id\": 32936472,\n            \"type\": \"comment\",\n            \"by\": \"choeger\",\n            \"text\": \"The problem is that containers are opaque and authors simply don&#x27;t care about quality. If say, fedora would allow containers by having deviating Versions of rpms per app, it would be quite cool. The OS could inform me about apps using deprecated Versions, dependencies could be shared, etc. But people don&#x27;t want to put up much effort when shipping their app. They want to build on some version of Ubuntu, add some manual hacks and expect everyone to use that container for the next decade or so. No one cares about dependencies, security or other nonfunctional aspects, sadly.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 08:01:33\",\n            \"hacker_id\": 32936013,\n            \"type\": \"comment\",\n            \"by\": \"teddyh\",\n            \"text\": \"People are generally opposed to forking, right?  If you fork a project, you effectively take over all the responsibilities to fix bugs and security issues etc. in that project, which is, most of the time, more work that the fork is worth.  Now, a popular recent trend is “vendoring” your dependencies; i.e. bundling the dependencies with your software.  However, vendoring <i>does not differ much from forking</i>.  The responsibility may be slightly less, since you only have to fix bugs and issues affecting your application’s usage of the software.  But, just like a fork, the longer you go without merging from the upstream version, the more work it is to maintain your fork.<p>I suggest that vendoring, just like forking, should be avoided, for largely the same reasons.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:02:43\",\n            \"hacker_id\": 32944596,\n            \"type\": \"comment\",\n            \"by\": \"peanut_worm\",\n            \"text\": \"Wonder if this has anything to do with how some people nervously tap their feet\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 07:19:05\",\n            \"hacker_id\": 32935686,\n            \"type\": \"comment\",\n            \"by\": \"Karellen\",\n            \"text\": \"&gt; Modern applications are inherently fragile.<p>Well, there&#x27;s your problem.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:29:56\",\n            \"hacker_id\": 32944228,\n            \"type\": \"comment\",\n            \"by\": \"peregrine\",\n            \"text\": \"raises many questions:<p>- what movements was this evolved to support? (sprinting? walking a different way than was studied? running?)<p>- Are our shoes causing us to underuse this muscle?<p>Just from the video and the cadence shown I suspect if you did a slightly quick jog running on your forefoot you might hit that muscle on the rebound.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 09:17:57\",\n            \"hacker_id\": 32936522,\n            \"type\": \"comment\",\n            \"by\": \"hnaccountme\",\n            \"text\": \"Better title would be &quot;Traditional Packaging Is Not Suitable For Low Skilled Developers&quot;\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:57:13\",\n            \"hacker_id\": 32944534,\n            \"type\": \"comment\",\n            \"by\": \"Jweb_Guru\",\n            \"text\": \"These claims sound pretty suspect and much more selective journals than iScience have published completely bogus research before.  Would like to see this replicated many, many times before anyone starts selling a product whose purported benefits are demonstrated solely from a single research study from a highly conflicted author.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:51:36\",\n            \"hacker_id\": 32944470,\n            \"type\": \"comment\",\n            \"by\": \"fefe23\",\n            \"text\": \"They could have tried a bit harder to not make this sound like &quot;DOCTORS HATE THIS TRICK&quot;\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 08:11:38\",\n            \"hacker_id\": 32936084,\n            \"type\": \"comment\",\n            \"by\": \"doubleunplussed\",\n            \"text\": \"vscode example notwithstanding, I do not encounter the &#x27;conflicting packages&#x27; problem very often on Arch. In fact, I don&#x27;t remember the last time I encountered it, other than when it&#x27;s an explicit choice - like, Python can only have one version of a package installed for the system Python interpreter, so if you try to install both python-numpy and python-numpy-mkl-bin, well, you have to choose. That&#x27;s how Python works, though you can of course make additional Python environments (venv&#x2F;conda&#x2F;whatever) with different packages.<p>I notice the vscode example involves the AUR, which is not the official repositories. I consider that a broken package, and it should be fixed. One of the packages should rename its main executable or whatever.<p>Chrome, for example, has various versions, but they ship binaries with different names, e.g. &#x2F;usr&#x2F;bin&#x2F;google-chrome-stable.<p>The great thing about Arch is that there is one canonical user repository, the AUR. So the official repos should not have conflicts unless absolutely necessary, and the AUR should endeavour not to have conflicts, though it&#x27;s more of a wild-west so they&#x27;re somewhat more likely.<p>However, you generally don&#x27;t have to think about how to not conflict with whatever random packages may be out there - you only need to consider the repos and the AUR. Anyone making their own packages that are not in the official repos or the AUR, and yet conflict with them, well, that&#x27;s their problem.<p>Arch being super up to date and the existence of the AUR really does obviate the need for containerising apps to a large degree, at least from the perspective of ensuring dependencies are satisfied (there are still security reasons to want containerisation). I don&#x27;t believe I have any containerised apps, and yet I&#x27;m running loads of modern common programs like zoom, chrome, discord, spotify, the list goes on.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:09:07\",\n            \"hacker_id\": 32944667,\n            \"type\": \"comment\",\n            \"by\": \"boringg\",\n            \"text\": \"So when&#x27;s the product release to provide specific soleus pushups coming out (as I do my soleus pushups at my desk)?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 10:27:57\",\n            \"hacker_id\": 32936992,\n            \"type\": \"comment\",\n            \"by\": \"eqvinox\",\n            \"text\": \"&gt; Traditional packaging introduces several issues, such as dependency and package conflicts, which usually require workarounds that differ from one distribution to another.<p>I feel that there was no thought here at all regarding the reverse perspective:<p>Current application development and deployment practices introduce several issues, such as dependency and package conflicts, which usually require workarounds that differ from one application to another.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:24:06\",\n            \"hacker_id\": 32944155,\n            \"type\": \"comment\",\n            \"by\": \"AlexMuir\",\n            \"text\": \"This seems very close to the motion of rapid skipping.  Once one can skip without jumping like a kangaroo it becomes almost effortless but also gets a good sweat on.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 08:30:41\",\n            \"hacker_id\": 32936206,\n            \"type\": \"comment\",\n            \"by\": \"qwery\",\n            \"text\": \"&gt; However, Electron based applications vary, as they are built on top of different versions of Electron.<p>I thought one of the selling points of Electron et al. was building apps on web standards. What is changing so fundamentally between versions of Electron that prevents apps from running on the latest release? I wouldn&#x27;t expect Element to not work on Firefox 432[0] after using it on Firefox 431...<p>[0] I lost track of Firefox version numbers somewhere between 3 and 50\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:44:25\",\n            \"hacker_id\": 32944396,\n            \"type\": \"comment\",\n            \"by\": \"wturner\",\n            \"text\": \"The motion seems like it mimics what skateboarders do with their front foot when they ollie.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 07:24:06\",\n            \"hacker_id\": 32935716,\n            \"type\": \"comment\",\n            \"by\": \"zokier\",\n            \"text\": \"I feel the article is missing the point of distros. They are supposed to be fully self-contained integrated operating systems, not just container platforms.<p>Additionally, essentially vendoring full dependency trees for each application separately would massively increase the maintenance burden because instead of just maintaining one version of a library the distro will need to maintain n versions<p>&gt; Modern applications are inherently fragile.<p>There is nothing inherent in the fragility, it is self-inflicted problem of some applications.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:43:07\",\n            \"hacker_id\": 32944377,\n            \"type\": \"comment\",\n            \"by\": \"gcau\",\n            \"text\": \"Having seen the video, it looks like the natural leg tapping motion literally everyone instinctively does when sitting down.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 11:15:57\",\n            \"hacker_id\": 32937331,\n            \"type\": \"comment\",\n            \"by\": \"camgunz\",\n            \"text\": \"I generally think these arguments (containers, flatpak) boil down to: I don&#x27;t want to figure out how a distro works. I&#x27;m unsympathetic to that; it&#x27;s actually pretty easy to figure that out: they almost all use systemd and making a deb&#x2F;rpm is also straightforward (there are great guides). Distros are also great at updates, to the degree devs can largely outsource a lot of it to them (compared with Windows where you&#x27;re writing update functionality into your app, or whatever).<p>I&#x27;m not even sympathetic to weird cases like OBS needing a forked version of ffmpeg. 1 this sounds like a wacky thing to do, 2 it sounds like they created a new project that is a different dependency. Call it something else (I suggest obsmpeg), package it for distros, pull in updates from ffmpeg whenever you want, reap the benefits of FOSS. Inventing an entirely new software delivery system instead seems like an overreaction.<p>I am sympathetic to working this out across multiple distros though. Finding the intersection of packages across multiple versions of Ubuntu, Debian and Fedora isn&#x27;t super easy, and it can really hamstring you when building an app (you want to use libcool-1.8.x, Ubuntu LTS has libcool-1.2.25, :sad:). The ecosystem isn&#x27;t set up for this and it&#x27;s a pain to deal with in your app (you more or less #ifdef functionality out, which product managers will freak out about).\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:30:20\",\n            \"hacker_id\": 32944875,\n            \"type\": \"comment\",\n            \"by\": \"timothylaurent\",\n            \"text\": \"There&#x27;s no way that isolating the soleus is somehow mysterious and out of reach of the common person.<p>Just tell us what sort of activation is needed - how long should you do the exercise - we can manage to figure out if we&#x27;re working our soleus.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 10:49:42\",\n            \"hacker_id\": 32937148,\n            \"type\": \"comment\",\n            \"by\": \"friendzis\",\n            \"text\": \"The <i>fundamental</i> problem is not that distribution maintainers do not leverage containers, but rather we do not understand dependency models&#x2F;trees of our programs.<p>Containers are golden images. You find combination of stuff that works, carefully package them together and ship this whole package. Gold images run on bare metal, containers run on container runtime enabled kernel.<p>Sure, containerizing an application is &#x2F;easier&#x2F; than working out the dependency trees and solving dependency conflicts between them. It is by no means fundamentally better approach.<p>If anything, this argument dismisses most work done by distros - building and solving those dependency trees. Maintainers of free OSes sometimes do not bother to solve all possible conflicts, however instead of breaking the system&#x2F;packages, they do inform you of possible conflicts <i>that are not solved</i>.<p>Inability to cherry-pick dependencies is deceptively wrong. Traditional distributions resort to use of so called meta-packages and alternatives to keep the system up to date. Deb&#x2F;rpm packages are simple archives with additional metadata slapped on. The packaging system is transparent to contents: nothing forbids you to package versions 1.0 and 2.0 and have them happily coexist as long as they do not share common paths. In fact, a lot of packages are distributed in exactly the same way.<p>It seems that the author has a solution - containers - and tries to find a problem for said solution.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-21 10:07:40\",\n            \"hacker_id\": 32922901,\n            \"type\": \"story\",\n            \"by\": \"pabs3\",\n            \"text\": null,\n            \"title\": \"Traditional packaging is not suitable for modern applications?\",\n            \"url\": \"https://theevilskeleton.gitlab.io/2022/08/29/traditional-packaging-is-not-suitable-for-modern-applications.html\",\n            \"score\": 54\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:30:45\",\n            \"hacker_id\": 32944233,\n            \"type\": \"comment\",\n            \"by\": \"trynewideas\",\n            \"text\": \"See? Don&#x27;t skip leg day.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:09:31\",\n            \"hacker_id\": 32943993,\n            \"type\": \"comment\",\n            \"by\": \"jollyllama\",\n            \"text\": \"So just tap your foot in a weird way and you can keep your metabolism high?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:34:32\",\n            \"hacker_id\": 32944914,\n            \"type\": \"comment\",\n            \"by\": \"t-3\",\n            \"text\": \"Interesting. I wonder if this metabolic response is very important to human long-distance running capability or if it&#x27;s just one small optimization among many? Small muscles used mostly during extended swimming or climbing might be worth investigation if muscle-activated metabolic modes are more common.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 16:56:47\",\n            \"hacker_id\": 32941573,\n            \"type\": \"comment\",\n            \"by\": \"zepppotemkin\",\n            \"text\": \"Serious question, why do we can about human art when we&#x27;ve got things like stable diffusion now? retro value?\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 21:16:15\",\n            \"hacker_id\": 32944730,\n            \"type\": \"comment\",\n            \"by\": \"ravenstine\",\n            \"text\": \"From the article:<p><i>So, how do you perform a soleus pushup?<p>In brief, while seated with feet flat on the floor and muscles relaxed, the heel rises while the front of the foot stays put. When the heel gets to the top of its range of motion, the foot is passively released to come back down. The aim is to simultaneously shorten the calf muscle while the soleus is naturally activated by its motor neurons.</i>\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 20:50:18\",\n            \"hacker_id\": 32944457,\n            \"type\": \"comment\",\n            \"by\": \"pawelduda\",\n            \"text\": \"Sounds amazing at a first glance, but I was hoping to at least see them attempt to describe how the move is performed.<p>Seems like a trailer for something that needs to be unlocked with money.\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        },\n        {\n            \"convert_from_unix\": \"2022-09-22 18:51:28\",\n            \"hacker_id\": 32943061,\n            \"type\": \"comment\",\n            \"by\": \"ruined\",\n            \"text\": \"yes\",\n            \"title\": null,\n            \"url\": null,\n            \"score\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create NewsItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hacker_id\":837484,\n    \"type\":\"story\",\n    \"by\": \"tofunmi\",\n    \"text\": \"a penny wise a pond foolish\",\n    \"title\":\"wise words\",\n    \"url\":\"https://newsflash.ngng\",\n    \"score\":50\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/list",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createItem Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hacker_id\":837484,\n    \"type\":\"story\",\n    \"by\": \"tofunmi\",\n    \"text\": \"a penny wise a pond foolish\",\n    \"title\":\"wise words\",\n    \"url\":\"https://newsflash.ngng\",\n    \"score\":50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 22 Sep 2022 22:51:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": {\n        \"hacker_id\": [\n            \"items with this hacker id already exists.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "Create Item Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hacker_id\":992899,\n    \"type\":\"story\",\n    \"by\": \"tofunmi\",\n    \"text\": \"a penny wise a pond foolish\",\n    \"title\":\"wise words\",\n    \"url\":\"https://newsflash.ngng\",\n    \"score\":50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 22 Sep 2022 22:53:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "209"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"convert_from_unix\": \"2022-09-22T22:53:40.736098Z\",\n        \"hacker_id\": 992899,\n        \"type\": \"story\",\n        \"by\": \"tofunmi\",\n        \"text\": \"a penny wise a pond foolish\",\n        \"title\": \"wise words\",\n        \"url\": \"https://newsflash.ngng\",\n        \"score\": 50\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete news Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/992899",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"992899"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete News Item failure",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/398380321",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"398380321"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 22 Sep 2022 22:54:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"News Item not found\"\n}"
+				},
+				{
+					"name": "Delete News Item success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/992899",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"992899"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 23 Sep 2022 04:48:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Edit NewsItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hacker_id\":837484,\n    \"type\":\"story\",\n    \"by\": \"tofunmiii\",\n    \"text\": \"a penny wise a pond foolish for the foolish\",\n    \"title\":\"really foolish words\",\n    \"url\":\"https://newsflash.ngng\",\n    \"score\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/837484",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"837484"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit News Item Successfully",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hacker_id\":837484,\n    \"type\":\"story\",\n    \"by\": \"tofunmiii\",\n    \"text\": \"a penny wise a pond foolish for the foolish\",\n    \"title\":\"really foolish words\",\n    \"url\":\"https://newsflash.ngng\",\n    \"score\":10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/837484",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"837484"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 23 Sep 2022 04:51:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"News item updated successfully\"\n}"
+				},
+				{
+					"name": "Edit NewsItem Failed",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hacker_id\":837484,\n    \"type\":\"story\",\n    \"by\": \"tofunmiii\",\n    \"text\": \"a penny wise a pond foolish for the foolish\",\n    \"title\":\"really foolish words\",\n    \"url\":\"https://newsflash.ngng\",\n    \"score\":10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/8374843",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"8374843"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 23 Sep 2022 04:52:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.8.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"News Item not found\"\n}"
+				}
+			]
+		}
+	]
+}

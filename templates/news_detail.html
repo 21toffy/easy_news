@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'css/detail_page.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+
+    
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-lg-10 mx-auto mb-4">
+           <div class="section-title text-center ">
+               <h3 class="top-c-sep">Easy News</h3>
+               <p>.....</p>
+           </div>
+       </div>
+   </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'item_list' %}">Home</a></li>
+              <li class="breadcrumb-item active">detail</li>
+            </ol>
+          </nav>
+        <div class="row">
+            <div class="col-lg-3 left">
+                <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid" alt="Responsive image" />
+                    <div class="p-3 border-bottom">
+                        <h6 class="font-weight-bold text-dark">Notifications</h6>
+                        <p class="mb-0 text-muted">You’re all caught up! Check back later for new notifications</p>
+                    </div>
+                    <div class="p-3">
+                        <button type="button" class="btn btn-outline-success btn-sm pl-4 pr-4">View settings</button>
+                    </div>
+                </div>
+                <div class="box mb-3 shadow-sm rounded bg-white profile-box text-center">
+
+                    <div class="p-3 text-left border-top border-bottom">
+                        <h5 class="font-weight-bold text-dark mb-1 mt-0">{{item.title}}</h5>
+                        <p class="mb-0 text-muted"> 
+                        {% if item.text is not None %}
+                            {{ item.text|truncatechars:20 }}</p>
+                        {% else %}
+                        <small>No text</small>
+                        {% endif %}
+                    </div>
+                    <div class="p-3">
+                        <div class="d-flex align-items-top mb-2">
+                            <p class="mb-0 text-muted">url</p>
+                            <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">{{item.url|truncatechars:10}}</p>
+                        </div>
+                        <div class="d-flex align-items-top">
+                            <p class="mb-0 text-muted">score</p>
+                            <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">{{item.score}}</p>
+                        </div>
+                        <div class="d-flex align-items-top mb-2">
+                            <p class="mb-0 text-muted">parent</p>
+                            <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">{{item.parent}}</p>
+                        </div>
+                        <div class="d-flex align-items-top">
+                            <p class="mb-0 text-muted">hacker ID</p>
+                            <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">{{item.hacker_id}}</p>
+                        </div>
+                        <div class="d-flex align-items-top mb-2">
+                            <p class="mb-0 text-muted">type</p>
+                            <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">{{item.type}}</p>
+                        </div>
+                        <div class="d-flex align-items-top">
+                            <p class="mb-0 text-muted">by</p>
+                            <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">{{item.by}}</p>
+                        </div>
+                        <div class="d-flex align-items-top mb-2">
+                            <p class="mb-0 text-muted">Source</p>
+                            <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">
+                            {% if item.hacker_news %}
+                            <small>created manually</small>
+                            
+                            {% else %}
+                            <small>hacker news</small>
+                                
+                            {% endif %}
+                        </p>
+                        </div>
+                        <div class="d-flex align-items-top">
+                            <p class="mb-0 text-muted">sync date</p>
+                            <small class="text-dark mb-0 mt-0 ml-auto">
+                                {{item.convert_from_unix|truncatechars:12}}
+                            </small>
+                            <!-- <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto"></p> -->
+                        </div>
+                        <div class="d-flex align-items-top">
+                            <p class="mb-0 text-muted">created date</p>
+                            <small class="text-dark mb-0 mt-0 ml-auto">
+                                {{item.created_at|truncatechars:12}}
+                            </small>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-9 right">
+                <div class="box shadow-sm rounded bg-white mb-3">
+                    <div class="box-title border-bottom p-3">
+                        <h6 class="m-0">{{item.hacker_id}}'s Comments</h6>
+                    </div>
+                 
+                    
+                    
+                    
+                    <div class="box-body p-0">
+                        {% for item in children %}
+
+                        <div class="p-3 d-flex align-items-center osahan-post-header">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+                            </div>
+                            <div class="font-weight-bold mr-3">
+                                
+                                <div class="mb-2">
+                                                               
+                            {% if item.child.title %}
+                            {{item.child.title}}
+                        {% else %}
+                        no title
+                            
+                        {% endif %}                                   
+                                </div>
+                                <h6>{{item.child.text}}</h6>
+                                <small>Type: {{item.child.type}}</small>
+                                <small>Score: {{item.child.score}}</small>
+                                <small>ID: {{item.child.type}}</small>
+                                <small>User: {{item.child.type}}</small>
+                                <small>Sync date: {{item.child.convert_from_unix |truncatechars:12}}</small>
+                                <small>Created date: {{item.child.created_at |truncatechars:12}}</small>
+                                </div>
+                            
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+                        
+                        
+
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+
+
